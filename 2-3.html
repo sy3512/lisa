@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .wrap {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        border: 5px solid rgb(0, 255, 0);
+        margin: 10px;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .wrap > div {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+      .wrap > div:nth-child(1) {
+        background-color: aqua;
+        order: 2;
+      }
+      .wrap > div:nth-child(2) {
+        background-color: azure;
+        order: 0;
+      }
+      .wrap > div:nth-child(3) {
+        background-color: bisque;
+        order: 0;
+      }
+      .wrap > div:nth-child(4) {
+        background-color: rgb(255, 132, 0);
+        order: 1;
+      }
+      .wrap > div:nth-child(5) {
+        background-color: blueviolet;
+        order: 0;
+      }
+      .wrap2 > div:last-child {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap wrap1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <div class="wrap wrap2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <div class="wrap wrap3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <div class="wrap wrap4">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <div class="wrap wrap5">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="aa.php" method="post">
+      <fieldset>
+        <legend>회원정보</legend>
+        <div>
+          <label for="userId">ID</label>:<input
+            type="text"
+            id="userId"
+            placeholder="아이디를 적어주세요"
+            autocomplete="on"
+          />
+        </div>
+        <div>
+          <label for="userPw">PW</label>:<input
+            type="password"
+            id="userPw"
+            name="userId"
+            placeholder="비밀번호를 적어주세요"
+          />
+        </div>
+        <div>
+          <input type="email" />
+          <label for>이메일 :</label>
+          <input type="email" id="userEmail" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>개인정보</legend>
+        <div>
+          <input type="text" name="userName" id="userName" placeholder="name" maxlength="10" />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="userBirth"
+            id="userBirth"
+            placeholder="Birth 00/00/00"
+          />
+        </div>
+        <div>
+          <input
+          type="text"
+          name="userBirth"
+          id="userBirth"
+          placeholder="Birth 00/00/00"
+          />
+        </div>
+        <div>
+          <select>
+            <option value="">통신사 선택</option>
+            <option value="SKT">SKT</option>
+            <option value="SK">SK</option>
+            <option value="U+">U+</option>
+          </select>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="man" />
+          <label for="men">남자</label>
+          <input type="radio" name="gender" id="woman" />
+          <label for="woman">여자</label>
+          <input type="radio" name="nation" id="local" />
+          <label for="local">내국인</label>
+          <input type="radio" name="nation" id="foreigner" />
+          <label for="foreigner">외국인</label>
+        </div>
+        <input type="checkbox" name="agree" id="agree1" />
+        <label for="agree1">개인정보이용</label>
+        <input type="checkbox" name="agree" id="agree2" />
+        <label for="agree2">고유식별정보처리</label>
+        <input type="checkbox" name="agree" id="agree3" />
+        <label for="agree3">통신사 이용약관</label>
+        <input type="checkbox" name="agree" id="agree4" />
+        <label for="agree4">인증사 이용약관</label>
+        <input type="checkbox" name="agree" id="agree5" />
+        <label for="agree5">네이버 개인 정보수집</label>
+      </fieldset>
+      <fieldset>
+        <legend>button</legend>
+        <input type="reset" value="다시쓰기" />
+        <input type="submit" value="가입하기" />
+        <input type="button" value="버튼" />
+        <button>열기</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
+      }
+      .btn {
+        color: red;
+        background-color: #40ff00;
+        font-size: 16px;
+        font-weight: bolder;
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 40px;
+        margin: auto;
+      }
+      #imgbox {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        border: 5px solid #ffffff;
+        margin: auto;
+        /* background-color: rgb(0, 0, 0); */
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        background-color: #40ff00;
+      }
+      .box2 {
+        background-color: rgb(255, 0, 0);
+      }
+      .box3 {
+        background-color: azure;
+      }
+      .box4 {
+        background-color: blue;
+      }
+      .box5 {
+        background-color: aqua;
+      }
+      .container1 {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-flow: row wrap;
+        align-items: stretch;
+        /* justify-content: space-around;
+        justify-content: space-between; */
+      }
+      .container3 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-flow: row wrap;
+      }
+      .container2 {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.container.container1>div.box.box$*3{box$} -->
+    <div id="imgbox">
+      <img src="https://i.gifer.com/PcUF.gif" />
+    </div>
+    <div class="btn">따라와</div>
+    <div class="container container1">
+      <div class="box box1">상품1</div>
+      <div class="box box2">상품2</div>
+      <div class="box box3">상품3</div>
+    </div>
+    <!-- end:1 -->
+    <div class="container container2">
+      <div class="box box1">상품1</div>
+      <div class="box box2">상품2</div>
+      <div class="box box3">상품3</div>
+      <div class="box box4">상품4</div>
+      <div class="box box5">상품5</div>
+    </div>
+    <!-- end:2 -->
+    <div class="container container3">
+      <div class="box box1">상품1</div>
+      <div class="box box2">상품2</div>
+      <div class="box box3">상품3</div>
+      <div class="box box4">상품4</div>
+      <div class="box box5">상품5</div>
+    </div>
+    <!-- end:3 -->
+  </body>
+</html>

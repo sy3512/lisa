@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      #gnb {
+        margin: 50px auto;
+        width: 1200px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+      }
+      #gnb > li a {
+        display: flex;
+        height: 70px;
+        align-items: center;
+      }
+      /* 가상선택자 */
+      #gnb > li > a:hover {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="gnb">
+      <li><a href="#">NEW</a></li>
+      <li><a href="#">SKINCARE</a></li>
+      <li><a href="#">MAKE UO</a></li>
+      <li><a href="#">SUNCARE</a></li>
+      <li><a href="#">MEN</a></li>
+      <li><a href="#">REVIEW</a></li>
+      <li><a href="#">RANKING</a></li>
+      <li><a href="#">EVENT</a></li>
+    </ul>
+  </body>
+</html>

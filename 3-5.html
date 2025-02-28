@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        background-image: url(https://t4.ftcdn.net/jpg/01/28/98/53/360_F_128985367_mNdX0b56w6OcgiyUDnZwukpK1bkpfWwI.jpg);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      #gnb {
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+        width: 1200px;
+        color: #48ff00;
+        display: flex;
+        justify-content: space-around;
+      }
+      #gnb > li a {
+        display: flex;
+        height: 70px;
+        align-items: center;
+      }
+      /* 가상선택자 */
+      #gnb > li > a:hover {
+        color: #ffcc00;
+      }
+      .header {
+        height: 700px;
+        background-color: rgb(165, 165, 165);
+      }
+      .main {
+        height: 500px;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        box-sizing: border-box;
+      }
+
+      .main {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .inner {
+        width: 960px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .inner > div {
+        width: 307px;
+        height: 400px;
+        background-color: aliceblue;
+        box-sizing: border-box;
+      }
+      .second-header {
+        height: 1000px;
+        background-color: rgb(176, 176, 176);
+      }
+      .footer {
+        height: 50px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul id="gnb">
+        <li><a href="#">외계인상점</a></li>
+        <li><a href="#">찾다</a></li>
+        <li><a href="#">사다</a></li>
+        <li><a href="#">보다</a></li>
+        <li><a href="#">보내다</a></li>
+      </ul>
+      <header class="header">
+        <div class="inner" role="banner">
+          <ul class="img-list">
+            <li>
+              <a href="#"><img src="02/Desktop - 1.jpg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="main-visual"></section>
+      <main class="main">
+        <div class="inner">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </main>
+      <section class="second-header"></section>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

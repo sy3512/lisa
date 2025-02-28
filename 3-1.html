@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 600px;
+        height: 100px;
+        display: flex;
+        background-color: #666;
+        margin-top: 50px;
+      }
+      .wrap > div:nth-child(1) {
+        background-color: tomato;
+      }
+      .wrap > div:nth-child(2) {
+        background-color: mediumturquoise;
+      }
+      .wrap > div:nth-child(3) {
+        background-color: sandybrown;
+      }
+      .wrap1 > .box {
+        width: 100px;
+      }
+      .wrap1 > .box:nth-child(1) {
+        flex-grow: 2;
+      }
+      .wrap1 > .box:nth-child(2) {
+        flex-grow: 1;
+      }
+      .wrap1 > .box:nth-child(3) {
+        flex-grow: 1;
+      }
+      .wrap2 > .box:nth-child(1) {
+        flex-grow: 3;
+      }
+      .wrap2 > .box:nth-child(2) {
+        flex-grow: 1;
+      }
+      .wrap2 > .box:nth-child(3) {
+        flex-grow: 2;
+      }
+      .wrap4 > .box {
+        width: 400px;
+      }
+      .wrap4 > .box:nth-child(1) {
+        flex-shrink: 3;
+      }
+      .wrap4 > .box:nth-child(2) {
+        flex-shrink: 1;
+      }
+      .wrap4 > .box:nth-child(3) {
+        flex-shrink: 1;
+      }
+      .wrap3 > .box {
+        width: 300px;
+      }
+      .wrap3 > .box:nth-child(1) {
+        flex-shrink: 2;
+      }
+      .wrap3 > .box:nth-child(2) {
+        flex-shrink: 1;
+      }
+      .wrap3 > .box:nth-child(3) {
+        flex-shrink: 1;
+      }
+      .wrap5 > .box {
+        flex-basis: 150px;
+        width: 200px;
+        /* flex: 0 1 150px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.wrap.wrap$*4>div.box*3 -->
+    <div class="wrap wrap1">
+      <!-- 100+(300/4)*2 => 250 -->
+      <div class="box"></div>
+      <!-- 100+(300/4)*1 => 175 -->
+      <div class="box"></div>
+      <!-- 100+(300/4)*1 => 175 -->
+      <div class="box"></div>
+    </div>
+    <div class="wrap wrap2">
+      <!-- 100+(300/6)*3 => 250 -->
+      <div class="box"></div>
+      <!-- 100+(300/6)*1 => 150 -->
+      <div class="box"></div>
+      <!-- 100+(300/6)*2 => 200 -->
+      <div class="box"></div>
+    </div>
+    <div class="wrap wrap3">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="wrap wrap4">
+      <!-- 400-(600/5)*3 => 40 -->
+      <div class="box"></div>
+      <!-- 400-(600/5)*3 => 280 -->
+      <div class="box"></div>
+      <!-- 400-(600/5)*3 => 280 -->
+      <div class="box"></div>
+    </div>
+    <div class="wrap wrap5">
+      <div class="box">box</div>
+      <div class="box box">box box</div>
+      <div class="box">box</div>
+    </div>
+  </body>
+</html>

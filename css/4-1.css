@@ -1,0 +1,73 @@
+/* common */
+.inner {
+  width: 960px;
+  margin: auto;
+}
+/* header */
+.header {
+  border-bottom: 1px solid #999;
+}
+.header > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb {
+  display: flex;
+}
+.gnb > .li > a {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gnb > li > a:hover {
+  background-color: black;
+  color: white;
+}
+.main-visual {
+  height: 700px;
+  background: url(../husky/1.jpg) no-repeat fixed center top / cover;
+}
+.sub-visual {
+  height: 1000px;
+  background: url(../husky/2.jpg) no-repeat fixed center top / cover;
+}
+/* main */
+.main {
+  padding-top: 80px 0;
+}
+.img-list {
+  display: flex;
+}
+.card-list {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+.card-list > li {
+  text-align: center;
+}
+.card-list > li > a > div > strong {
+  display: block;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.card-list > li > a span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* footer */
+.footer {
+  background: #000;}
+
+.footer>address{
+  height: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
