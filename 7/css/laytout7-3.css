@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+#a {
+  width: 1500px;
+  border: 3px solid black;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#a > li {
+  width: 360px;
+  height: 360px;
+  background-color: aquamarine;
+}
+@media screen and (max-width: 1520px) {
+  #a {
+    width: 1000px;
+  }
+  #a > li {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media screen and (max-width:1050px) {
+  #a {
+    width: 500px;
+  }
+  #a > li {
+    width: 240px;
+    height: 240px;
+  }
+}

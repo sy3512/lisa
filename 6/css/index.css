@@ -499,6 +499,7 @@ body {
 }
 
 .quick-menu-icons {
+  
   > ul {
     display: flex;
     flex-wrap: wrap;

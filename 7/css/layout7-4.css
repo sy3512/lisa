@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+}
+li {
+  list-style: none;
+}
+ul {
+  width: 1400px;
+  background-color: #000;
+  margin: 0 auto;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul > li {
+  width: 335px;
+  height: 335px;
+}
+ul > li > img {
+  width: 100%;
+  height: 100%;
+}
+/* 높이값까지 주면 비율이 깨지니까 넓이만 주기기 */
+ul > li:last-child {
+  width: 1400px;
+}
+
+@media screen and (max-width: 1440px) {
+  ul {
+    width: 1200px;
+  }
+  ul > li {
+    width: 380px;
+    gap: 30px;
+  }
+  ul > li:last-child {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  ul {
+    width: 100vw;
+    gap: 1vw;
+  }
+  ul > li {
+    width: 49.5vw;
+  }
+  ul >li:last-child {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 899px) {
+  ul > li {
+    width: 100vw;
+  }
+}
